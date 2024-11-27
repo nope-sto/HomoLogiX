@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Dr. Peter Stockinger">
+
+        <title>HomoLogiX</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/magnific-popup.css" rel="stylesheet">
+
+        <link href="css/tooplate-waso-strategy.css" rel="stylesheet">
+        
+
+
+    </head>
+    
+    
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+
+                <a href="index.html" class="navbar-brand" style="font-family: 'TenorSans', sans-serif; font-size: 30px; text-decoration: none;"><style>@font-face {font-family: 'TenorSans'; src: url('TenorSans-Regular.ttf') format('truetype');}</style>HomoLogiX</a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_1"><strong>Back to Landing Page</strong></a>
+                        </li>
+                <div>
+                        
+            </div>
+        </nav>
+
+        <main>
+                <div class="container">
+                    <div class="row">
+                        <script>
+                            let activeButton = null; // Variable to track the currently active button
+                          
+                            function toggleText(button) {
+                              // Select the elements within the button
+                              const originalContent = button.querySelector('.original-content');
+                              const toggleText = button.querySelector('.toggle-text');
+                              
+                              // If there's an active button and it's not the same as the clicked one, reset it
+                              if (activeButton && activeButton !== button) {
+                                const activeOriginalContent = activeButton.querySelector('.original-content');
+                                const activeToggleText = activeButton.querySelector('.toggle-text');
+                                activeOriginalContent.style.display = 'block';
+                                activeToggleText.style.display = 'none';
+                              }
+                          
+                              // Toggle the visibility of the current button's content
+                              if (originalContent.style.display === 'none') {
+                                originalContent.style.display = 'block';
+                                toggleText.style.display = 'none';
+                              } else {
+                                originalContent.style.display = 'none';
+                                toggleText.style.display = 'block';
+                              }
+                          
+                              // Update the activeButton to the current one
+                              activeButton = button;
+                            }
+                          </script>
+                          
+                          
+                        <div class="nav nav-tabs flex-column" id="nav-tab" role="tablist" style="display: flex; align-items: center;">
+                                                                               
+                            <h2 style="margin-top: 25px;"> Related Publications</h2> 
+
+                            <!-- First Button -->
+                            <button class="nav-link" id="nav-business-tab-1" data-bs-toggle="tab" data-bs-target="#nav-business-1" type="button" role="tab" aria-controls="nav-business-1" aria-selected="true" style="display: flex; align-items: top; padding: 0; min-width: 90vw;" onclick="toggleText(this)">
+                                <div class="original-content">
+                                    <h4 style="margin: 15px;">ACS Catalysis 2024</h4>
+                                    <span style="margin: 15px;">Nature’s Toolbox for the Hydrolysis of Lactams and Cyclic Imides <br> Peter Stockinger & Rebecca Buller</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">ACS Catalysis 2024</h4>
+                                    <p>Hydrolytic enzymes, such as lactamases or hydantoinases, can be valuably applied to convert lactams (cyclic amides) and cyclic imides into optically pure compounds, for example, D- or L- amino acids, and to resolve racemic mixtures, such as Vince lactams. The chiral building blocks can be utilized to produce biologically active peptides, pesticides, sweeteners, and antibiotics, such as semisynthetic penicillins or cephalosporins. Furthermore, these compounds find application as feed and food additives and constitute useful intermediates for cosmetics, pharmaceuticals, or agrochemicals. Beyond their application in chemical synthesis, cyclic amide and imide hydrolyzing enzymes hold promise in the recovery of materials containing polyamides or in the bioremediation of antibiotics and herbicides. Today, lactam and cyclic imide hydrolyzing biocatalysts mainly originate from enzyme families associated with two distinct structural archetypes: (a) α/β-hydrolases (e.g., lipases) and (b) metal-dependent amidohydrolases (e.g., dihydropyrimidinases/hydantoinases). Beyond these well-explored sources, nature offers an additional wealth of mechanistically, catalytically, and structurally distinct enzymes for lactam and cyclic imide hydrolysis, including serine and metallo-β-lactamases, allantoinases, 5-oxoprolinases, and members of the amidase signature family. To facilitate the discovery of suitable biocatalysts for such types of hydrolysis reactions, we provide a comprehensive overview of application examples, as well as functional annotations (EC identifiers) and structural architectures (CATH identifiers), of the currently known biocatalytic toolbox. In addition, a protein sequence database containing all relevant biocatalyst superfamilies for cyclic amide and imide hydrolysis has been created.</p>
+                                    <a href="https://pubs.acs.org/doi/full/10.1021/acscatal.4c04474" target="_blank" style="color: #199999;">Read our Publication</a><br>
+                                    <a href="https://ccbiozhaw.github.io/CyclAmidImid/" target="_blank" style="color: #199999;">Visit CyclAmidImid Database</a>
+                                </span>
+                            </button>
+                            <!-- Second Button -->
+                            <button class="nav-link" id="nav-business-tab-2" data-bs-toggle="tab" data-bs-target="#nav-business-2" type="button" role="tab" aria-controls="nav-business-2" aria-selected="true" style="display: flex; align-items: top; padding: 0; min-width: 90vw;" onclick="toggleText(this)">
+                                <div class="original-content">
+                                    <h4 style="margin: 15px;">Nature Communications Chemistry 2024</h4>
+                                    <span style="margin: 15px;">Effective engineering of a ketoreductase for the biocatalytic synthesis of an ipatasertib precursor<br> Sumire Honda, Rebecca Buller et al.</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">Nature Communications Chemistry 2024</h4>
+                                    <p>Semi-rational enzyme engineering is a powerful method to develop industrial biocatalysts. Profiting from advances in molecular biology and bioinformatics, semi-rational approaches can effectively accelerate enzyme engineering campaigns. Here, we present the optimization of a ketoreductase from Sporidiobolus salmonicolor for the chemo-enzymatic synthesis of ipatasertib, a potent protein kinase B inhibitor. Harnessing the power of mutational scanning and structure-guided rational design, we created a 10-amino acid substituted variant exhibiting a 64-fold higher apparent kcat and improved robustness under process conditions compared to the wild-type enzyme. In addition, the benefit of algorithm-aided enzyme engineering was studied to derive correlations in protein sequence-function data, and it was found that the applied Gaussian processes allowed us to reduce enzyme library size. The final scalable and high performing biocatalytic process yielded the alcohol intermediate with ≥ 98% conversion and a diastereomeric excess of 99.7% (R,R-trans) from 100 g L−1 ketone after 30 h. Modelling and kinetic studies shed light on the mechanistic factors governing the improved reaction outcome, with mutations T134V, A238K, M242W and Q245S exerting the most beneficial effect on reduction activity towards the target ketone.</p>
+                                    <a href="https://www.nature.com/articles/s42004-024-01130-5" target="_blank" style="color: #199999;">Read our Publication</a>
+                                </span>
+                            </button>
+
+                            <!-- Third Button -->
+                            <button class="nav-link" id="nav-business-tab-3" data-bs-toggle="tab" data-bs-target="#nav-business-3" type="button" role="tab" aria-controls="nav-business-3" aria-selected="true" style="display: flex; align-items: top; padding: 0; min-width: 90vw;" onclick="toggleText(this)">
+                                <div class="original-content">
+                                    <h4 style="margin: 15px;">Nature Communications 2022</h4>
+                                    <span style="margin: 15px;">Algorithm-aided engineering of aliphatic halogenase WelO5* for the asymmetric late-stage functionalization of soraphens<br> Johannes Büchler, Sumire Honda, Rebecca Buller et al.</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">Nature Communications 2022</h4>
+                                    <p>Late-stage functionalization of natural products offers an elegant route to create novel entities in a relevant biological target space. In this context, enzymes capable of halogenating sp3 carbons with high stereo- and regiocontrol under benign conditions have attracted particular attention. Enabled by a combination of smart library design and machine learning, we engineer the iron/α-ketoglutarate dependent halogenase WelO5* for the late-stage functionalization of the complex and chemically difficult to derivatize macrolides soraphen A and C, potent anti-fungal agents. While the wild type enzyme WelO5* does not accept the macrolide substrates, our engineering strategy leads to active halogenase variants and improves upon their apparent kcat and total turnover number by more than 90-fold and 300-fold, respectively. Notably, our machine-learning guided engineering approach is capable of predicting more active variants and allows us to switch the regio-selectivity of the halogenases facilitating the targeted analysis of the derivatized macrolides’ structure-function activity in biological assays.</p>
+                                    <a href="https://www.nature.com/articles/s41467-022-27999-1" target="_blank" style="color: #199999;">Read our Publication</a>
+                                </span>
+                            </button>   
+
+                            <!-- Fourth Button -->
+                            <button class="nav-link" id="nav-business-tab-4" data-bs-toggle="tab" data-bs-target="#nav-business-4" type="button" role="tab" aria-controls="nav-business-4" aria-selected="true" style="display: flex; align-items: top; padding: 0; min-width: 90vw;" onclick="toggleText(this)">
+                                <div class="original-content">
+                                    <h4 style="margin: 15px;">Wiley ChemBioChem 2020</h4>
+                                    <span style="margin: 15px;">Engineering of Thermostable β-Hydroxyacid Dehydrogenase for the Asymmetric Reduction of Imines<br> Peter Stockinger et al.</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">Wiley ChemBioChem 2020</h4>
+                                    <p>Late-stage functionalization of natural products offers an elegant route to create novel entities in a relevant biological target space. In this context, enzymes capable of halogenating sp3 carbons with high stereo- and regiocontrol under benign conditions have attracted particular attention. Enabled by a combination of smart library design and machine learning, we engineer the iron/α-ketoglutarate dependent halogenase WelO5* for the late-stage functionalization of the complex and chemically difficult to derivatize macrolides soraphen A and C, potent anti-fungal agents. While the wild type enzyme WelO5* does not accept the macrolide substrates, our engineering strategy leads to active halogenase variants and improves upon their apparent kcat and total turnover number by more than 90-fold and 300-fold, respectively. Notably, our machine-learning guided engineering approach is capable of predicting more active variants and allows us to switch the regio-selectivity of the halogenases facilitating the targeted analysis of the derivatized macrolides’ structure-function activity in biological assays.</p>
+                                    <a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/cbic.202000526" target="_blank" style="color: #199999;">Read our Publication</a>
+                                </span>
+                            </button> 
+                            <!-- Fifth Button -->
+                            <button class="nav-link" id="nav-business-tab-4" data-bs-toggle="tab" data-bs-target="#nav-business-4" type="button" role="tab" aria-controls="nav-business-4" aria-selected="true" style="display: flex; align-items: top; padding: 0; min-width: 90vw;" onclick="toggleText(this)">
+                                <div class="original-content">
+                                    <h4 style="margin: 15px;">Wiley ChemBioChem 2020</h4>
+                                    <span style="margin: 15px;">Crossing the Border: From Keto‐to Imine Reduction in Short‐Chain Dehydrogenases/Reductases<br> Sebastian Roth, Peter Stockinger et al.</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">Wiley ChemBioChem 2020</h4>
+                                    <p>The family of NAD(P)H-dependent short-chain dehydrogenases/reductases (SDRs) comprises numerous biocatalysts capable of C=O or C=C reduction. The highly homologous noroxomaritidine reductase (NR) from Narcissus sp. aff. pseudonarcissus and Zt_SDR from Zephyranthes treatiae, however, are SDRs with an extended imine substrate scope. Comparison with a similar SDR from Asparagus officinalis (Ao_SDR) exhibiting keto-reducing activity, yet negligible imine-reducing capability, and mining the Short-Chain Dehydrogenase/Reductase Engineering Database indicated that NR and Zt_SDR possess a unique active-site composition among SDRs. Adapting the active site of Ao_SDR accordingly improved its imine-reducing capability. By applying the same strategy, an unrelated SDR from Methylobacterium sp. 77 (M77_SDR) with distinct keto-reducing activity was engineered into a promiscuous enzyme with imine-reducing activity, thereby confirming that the ability to reduce imines can be rationally introduced into members of the “classical” SDR enzyme family. Thus, members of the SDR family could be a promising starting point for protein approaches to generate new imine-reducing enzymes.</p>
+                                    <a href="https://chemistry-europe.onlinelibrary.wiley.com/doi/full/10.1002/cbic.202000233" target="_blank" style="color: #199999;">Read our Publication</a>
+                                </span>
+                            </button>  
+
+                            <h2 style="margin-top: 25px;"> Related Patents</h2>                      
+                            <!-- First Button -->
+                            <button class="nav-link" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true" style="display: flex; align-items: top; padding: 0;min-width: 90vw;" onclick="toggleText(this)">
+                                <div class="original-content">
+                                  <h4 style="margin: 15px;">WO2024160843A1</h4>
+                                  <span style="margin: 15px;"></spanstyle>Mutant ketoreductase with increased ketoreductase activity as well as methods and uses involving the same </span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">WO2024160843A1</h4>
+                                    <p>The present invention relates to a mutant ketoreductase with at least one mutation at position 241, a nucleic acid encoding the mutant ketoreductase, a vector comprising the nucleic acid, a method for the enzymatic reduction of a ketone and the formation of a chiral alcohol with the mutant ketoreductase, the use of the mutant ketoreductase for the reduction of ketones and the formation of chiral alcohols as well as the use of the method for the preparation of pharmaceutically active serine/threonine protein kinase inhibitors.</p>
+                                </span>
+                            </button>
+                            
+                                  </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                        
+                    <div class="col-lg-6 col-12">
+                        <div class="site-footer-wrap d-flex align-items-center">
+                            <p class="copyright-text mb-0 me-4">Copyright © 2024 HomoLogiX (not yet legally registered) <br> represented by Dr. Peter Stockinger</p>
+
+                            <ul class="social-icon">
+
+                                <li><a href="https://www.linkedin.com/company/homologix/" class="social-icon-link bi-linkedin"></a></li>
+                            
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>

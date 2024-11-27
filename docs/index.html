@@ -1,29 +1,447 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-body {
-  margin-left: 200px;
-  background: #5d9ab2 url("img_tree.png") no-repeat top left;
-}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.center_div {
-  border: 1px solid gray;
-  margin-left: auto;
-  margin-right: auto;
-  width: 90%;
-  background-color: #d0f0f6;
-  text-align: left;
-  padding: 8px;
-}
-</style>
-</head>
-<body>
+        <meta name="description" content="">
+        <meta name="author" content="Dr. Peter Stockinger">
 
-<div class="center_div">
-  <h1>Hello World!</h1>
-  <p>This example contains some advanced CSS methods you may not have learned yet. But, we will explain these methods in a later chapter in the tutorial.</p>
-</div>
+        <title>HomoLogiX</title>
 
-</body>
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/magnific-popup.css" rel="stylesheet">
+
+        <link href="css/tooplate-waso-strategy.css" rel="stylesheet">
+        
+
+
+    </head>
+    
+    
+    <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+        <div class="container">
+            <a href="index.html" class="navbar-brand" style="font-family: 'TenorSans', sans-serif; font-size: 30px; text-decoration: none;">
+                <style>@font-face {font-family: 'TenorSans'; src: url('TenorSans-Regular.ttf') format('truetype');}</style>HomoLogiX
+            </a>
+    
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_1"><strong>Home</strong></a>
+                    </li>
+    
+                    <!-- Dropdown for About -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle click-scroll" href="#section_2" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><strong>About</strong></a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="team.html">Our Team</a></li>
+                            <li><a class="dropdown-item" href="outputs.html">Our Outputs</a></li>
+                        </ul>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_3"><strong>Technology</strong></a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_4"><strong>Applications</strong></a>
+                    </li>
+        
+                    <li class="nav-item">
+                        <a class="nav-link click-scroll" href="#section_5"><strong>Contact</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+                        
+            </div>
+        </nav>
+
+        <main>
+
+            <section class="hero" id="section_1">
+                <div class="container-fluid h-100">
+                    <div class="row h-100">
+                       
+                        <div id="carouselExampleCaptions" class="carousel carousel-fade hero-carousel slide" data-bs-ride="carousel">
+                            <div class="logo-container position-absolute" 
+                                style="z-index: 2; width: 40vw; top: 0px; right: 20px;">
+                                <img src="Logo.svg" alt="Logo" class="img-fluid" style="width: 40vw;">
+                            </div>               
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+                                            <a href="#" class="navbar-brand" style="font-family: 'TenorSans', sans-serif; font-size: 3vw; text-decoration: none; background-color: rgba(255, 255, 255, 0.2); padding: 0px; border-radius: 0px; max-width: 60vw; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">Harnessing functional homology...</a>
+                                            <div class="d-flex align-items-center mt-4">
+                                                <a class="custom-btn btn custom-link" href="#section_3">Technology</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="carousel-image-wrap">
+                                        <video class="img-fluid carousel-image" preload="auto" autoplay muted loop playsinline  
+                                            style="opacity: 0; transition: opacity 1s ease-in-out;" 
+                                            oncanplay="if (this.closest('.carousel-item').classList.contains('active')) this.style.opacity = 1;" 
+                                            onloadedmetadata="this.playbackRate = 0.5;">
+                                            <source src="application.mov" type="video/mp4">
+                                        </video>
+                                    </div>
+                                    
+                                    
+                                    
+                                </div>
+
+                                <div class="carousel-item">
+                                    <div class="container position-relative h-100">
+                                        <div class="carousel-caption d-flex flex-column justify-content-center">
+                                            <a href="#" class="navbar-brand" style="font-family: 'TenorSans', sans-serif; font-size: 3vw; text-decoration: none; background-color: rgba(255, 255, 255, 0.2); padding: 0px; border-radius: 0px; max-width: 60vw; display: inline-block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">... to solve real world problems</a>
+                                            <div class="d-flex align-items-center mt-4">
+                                                <a class="custom-btn btn custom-link" href="#section_4">Applications</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="carousel-image-wrap">
+                                        <video class="img-fluid carousel-image" preload="auto" autoplay muted loop playsinline style="opacity: 1;" onloadedmetadata="this.playbackRate = 0.5"  onended="this.playbackRate *= -1; this.currentTime = this.playbackRate === -1 ? this.duration : 0; this.play();">                                            >
+                                            <source src="problem.mov" type="video/mp4">
+                                        </video>
+                                    </div>
+                                </div>
+
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="about section-padding" id="section_2">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                            <div class="about-image-wrap h-100">
+                                <img src="gondel.jpeg" class="img-fluid about-image" alt="">
+
+                                <div class="about-image-info">
+
+                                    <p class="text-white mb-0">The protein fitness landscape is rugged like the Swiss Alps, with each peak representing an optimal configuration. Bioinformatics serves as a gondola, enabling efficient navigation to desired fitness peaks.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 d-flex flex-column">
+                            <div class="about-thumb bg-white shadow-lg">
+                                
+                                <div class="about-info">
+
+                                    <h5 class="mb-3">About us</h5>
+
+                                    <p>HomoLogiX leverages recent breakthroughs in AI-driven protein design to tackle the challenges of producing therapeutic proteins which are currently sourced from higher organisms. By designing functional homologs expressible in cost-effective bacterial systems, we address ethical concerns and immunogenicity risks associated with animal-derived proteins, enabling more sustainable and scalable biomanufacturing.<br><br> It's time to harness AI’s revolutionary advancements to solve real-world problems.</p>
+
+
+                                </div>
+                            </div>
+
+                            <div class="row h-100">
+                                <div class="col-lg-6 col-6">
+                                    <div class="about-thumb d-flex flex-column justify-content-center mb-lg-0 h-100" style="background-color: #199999;"> <!-- Add inline style for background -->
+                                        <div class="about-info">
+                                            <h5 class="text-white mb-4">Committed to pragmatism.</h5>
+                                            <a class="custom-btn btn custom-bg-primary" href="team.html">Meet our team</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-6">
+                                    <div class="about-thumb d-flex flex-column justify-content-center mb-lg-0 h-100" style="background-color: #85A2D2;"> <!-- Add inline style for background -->
+                                        
+                                        <div class="about-info">
+                                            <h5 class="text-white mb-4">Proven track record.</h5>
+                                            <a class="custom-btn btn custom-bg-primary" href="outputs.html">Our outputs</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="services section-padding" id="section_3">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 text-center mx-auto mb-5">
+                            <h2>How it works</h2>
+
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <nav>
+                                <div class="nav nav-tabs flex-column align-items-baseline" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true">
+                                        <h3>Structural Similarity</h3>
+
+                                        <span>Structural models from deep learning enable both homolog identification and diversified protein library design for function discovery.</span>
+                                    </button>
+
+                                    <button class="nav-link" id="nav-strategy-tab" data-bs-toggle="tab" data-bs-target="#nav-strategy" type="button" role="tab" aria-controls="nav-strategy" aria-selected="false">
+                                        <h3>Functional Homology</h3>
+                                        
+                                        <span>With abundant biological data and modern tools, leveraging structural homology offers unprecedented potential for protein engineering. </span>
+                                    </button>
+
+                                    <button class="nav-link" id="nav-video-tab" data-bs-toggle="tab" data-bs-target="#nav-video" type="button" role="tab" aria-controls="nav-video" aria-selected="false">
+                                        <h3>Reverse Engineering</h3>
+                                        
+                                        <span>Utilizing recent AI breakthroughs enables precise and functional reverse engineering of proteins by generating sequences that match desired 3D structures.</span>
+                                    </button>
+                                </div>
+                            </nav>
+                        </div>
+
+                        <div class="col-lg-6 col-12">
+                            <div class="tab-content" id="nav-tabContent">
+                                <div class="tab-pane fade show active" id="nav-business" role="tabpanel" aria-labelledby="nav-intro-tab">
+                                    <h5 class="mt-4 mb-2">Structural similarity</h5>
+                                    <img src="fold.png" class="img-fluid" alt="">
+                                    <p>Thanks to the Nobel Prize-winning AlphaFold and derivatives, we can now model protein structures, compare topologies, and identify key regions, enabling us to:</p>                                 
+                                    <ul>
+                                        <li style="margin-bottom: 10px;">Identify true functional homologs<br>(proteins with similar activity)</li>
+                                        <li style="margin-bottom: 10px;">Create highly diverse protein libraries<br>(to discover yet unmet functions)</li>
+                                    </ul>
+                                    
+                                </div>
+
+                                <div class="tab-pane fade show" id="nav-strategy" role="tabpanel" aria-labelledby="nav-strategy-tab">
+                                    <h5 class="mt-4 mb-2">Functional Homology</h5>
+                                    <img src="function.png" class="img-fluid" alt="">
+                                    <p>Despite widespread biological diversity, many core functions remain conserved across species. Modern structural bioinformatics helps us to identify and leverage functional relationships in proteins, even when their primary structures have diverged significantly. By understanding these structure-function relationships, we can utilize nature's protein diversity to discover enzymes with enhanced properties suitable for industrial applications.</p>                                 
+                                </div>
+
+                                <div class="tab-pane fade show" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
+                                    <h5 class="mt-4 mb-2">Reverse Engineering</h5>
+                                    <img src="reverse.png" class="img-fluid" alt="">
+                                    <p>Recent AI breakthroughs, such as ProteinMPNN, allow for precise reverse engineering of proteins by generating sequences that match specific 3D structures. However, it's also crucial to ensure functional homology by identifying and preserving key residues essential for structural integrity and activity. These residues, involved in binding or catalysis, must be maintained to ensure the protein performs its intended function. Effective use of these tools requires expertise to control parameters, ensuring both accurate structure and functional performance.</p>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects section-padding pb-0" id="section_4">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-10 col-12 text-center mx-auto mb-5">
+                            <h2>Where It Works</h2>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="projects-thumb projects-thumb-small">
+                                <a>
+                                    <img src="biologic.jpeg" class="img-fluid projects-image" alt="">
+                                    
+                                    <div class="projects-info">
+                                        <div class="projects-title-wrap">
+                                            <h2 class="projects-title">Biologics</h2>
+                                        </div>
+
+                                        <div class="projects-btn-wrap mt-4">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="projects-thumb projects-thumb-small">
+                                <a>
+                                    <img src="biocatalyst.jpeg" class="img-fluid projects-image" alt="">
+                                    
+                                    <div class="projects-info">
+                                        <div class="projects-title-wrap">
+                                            <h2 class="projects-title">Biocatalysts</h2>
+                                        </div>
+
+                                        <div class="projects-btn-wrap mt-4">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-12">
+                            <div class="projects-thumb projects-thumb-small">
+                                <a>
+                                    <img src="biosimilar.jpeg" class="img-fluid projects-image" alt="">
+                                    
+                                    <div class="projects-info">
+                                        <div class="projects-title-wrap">
+                                            <h2 class="projects-title">Biosimilars</h2>
+                                        </div>
+
+                                        <div class="projects-btn-wrap mt-4">
+
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="section_5">
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1C3661" fill-opacity="1" d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+
+                <div class="contact-container-wrap">
+                    <div class="container">
+                        <div class="row">
+
+                            <div class="col-lg-6 col-12">
+                                <form id="contact-form" class="custom-form contact-form">
+                                    <h2 class="mb-5" style="color: white;">Contact us</h2>
+                            
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">                                    
+                                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
+                                        </div>
+                            
+                                        <div class="col-lg-6 col-md-6 col-12">         
+                                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@company.com" required="">
+                                        </div>
+                            
+                                        <div class="col-12">
+                                            <textarea class="form-control" rows="7" id="message" name="message" placeholder="Message"></textarea>
+                            
+                                            <button type="submit" class="form-control">Submit</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            
+                               
+
+                            <div class="col-lg-6 col-12">
+                                <div class="contact-thumb">
+                                    
+                                    <div class="contact-info bg-white shadow-lg">
+                                        <img src="Logo.svg" alt="">
+                                        <h4 class="mb-2">
+                                            <a href="tel: +41 78 3070894">
+                                                <i class="bi-telephone contact-icon me-2"></i>
+                                                +41 78 3070894
+                                            </a>
+                                        </h4>
+
+                                        <h5>
+                                            <a href="mailto:info@homologix.ch" class="footer-link">
+                                                <i class="bi-envelope-fill contact-icon me-2"></i>
+                                                info@homologix.ch
+                                            </a>
+                                        </h5>
+                                        
+                                        <!-- Copy "embed a map" HTML code from any point on Google Maps -> Share Link  -->
+                                        
+                                        <iframe class="google-map mt-4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d300874.3521940312!2d8.211233782982061!3d47.34379100499017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479aaf3a1977d601%3A0xa1a25d09c846f699!2sZHAW%3A%20Insitute%20of%20Chemistry%20and%20Biotechnology!5e0!3m2!1sde!2sch!4v1731106183129!5m2!1sde!2sch" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                        
+                    <div class="col-lg-6 col-12">
+                        <div class="site-footer-wrap d-flex align-items-center">
+                            <p class="copyright-text mb-0 me-4">Copyright © 2024 HomoLogiX (not yet legally registered) <br> represented by Dr. Peter Stockinger</p>
+
+                            <ul class="social-icon">
+
+                                <li><a href="https://www.linkedin.com/company/homologix/" class="social-icon-link bi-linkedin"></a></li>
+                            
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+
+        <script type="text/javascript">
+          (function() {
+            emailjs.init("f3Hb4qrbZBihQc6Z4");  // Replace with your EmailJS User ID
+          })();
+      
+          // Handle form submission
+          document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();  // Prevent default form submission
+        
+            // Send form data using EmailJS
+            emailjs.sendForm("service_yky9v4o", "template_yr47yeu", this)  // Replace with your Service ID and Template ID
+              .then(function(response) {
+                alert("Message sent successfully!");
+              }, function(error) {
+                alert("Failed to send message. Please try again.");
+              });
+          });
+        </script>
+
+    </body>
 </html>

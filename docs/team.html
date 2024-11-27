@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="Dr. Peter Stockinger">
+
+        <title>HomoLogiX</title>
+
+        <!-- CSS FILES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+        <link href="css/magnific-popup.css" rel="stylesheet">
+
+        <link href="css/tooplate-waso-strategy.css" rel="stylesheet">
+        
+
+
+    </head>
+    
+    
+        <nav class="navbar navbar-expand-lg bg-white shadow-lg">
+            <div class="container">
+
+                <a href="index.html" class="navbar-brand" style="font-family: 'TenorSans', sans-serif; font-size: 30px; text-decoration: none;"><style>@font-face {font-family: 'TenorSans'; src: url('TenorSans-Regular.ttf') format('truetype');}</style>HomoLogiX</a>
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_1"><strong>Back to Landing page</strong></a>
+                        </li>
+                    </ul>
+                <div>
+                        
+            </div>
+        </nav>
+
+        <main>
+                <div class="container">
+                    <div class="row">
+                        <script>
+                            let activeButton = null; // Variable to track the currently active button
+                          
+                            function toggleText(button) {
+                              // Select the elements within the button
+                              const originalContent = button.querySelector('.original-content');
+                              const toggleText = button.querySelector('.toggle-text');
+                              
+                              // If there's an active button and it's not the same as the clicked one, reset it
+                              if (activeButton && activeButton !== button) {
+                                const activeOriginalContent = activeButton.querySelector('.original-content');
+                                const activeToggleText = activeButton.querySelector('.toggle-text');
+                                activeOriginalContent.style.display = 'block';
+                                activeToggleText.style.display = 'none';
+                              }
+                          
+                              // Toggle the visibility of the current button's content
+                              if (originalContent.style.display === 'none') {
+                                originalContent.style.display = 'block';
+                                toggleText.style.display = 'none';
+                              } else {
+                                originalContent.style.display = 'none';
+                                toggleText.style.display = 'block';
+                              }
+                          
+                              // Update the activeButton to the current one
+                              activeButton = button;
+                            }
+                          </script>
+                          
+                        
+                        <div class="nav nav-tabs flex-column" id="nav-tab" role="tablist" style="display: flex; align-items: center;">
+                            <h2 style="margin-top: 25px;"> Team</h2>                      
+                            <!-- First Button -->
+                            <button class="nav-link" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true" style="display: flex; align-items: top; padding: 0;min-width: 90vw;" onclick="toggleText(this)">
+                                <img src="Peter.png" class="img-fluid" alt="" style="max-height: 20vh; width: auto; height: auto; margin: 15px;">
+                                <div class="original-content">
+                                  <h4 style="margin: 15px;">Dr. Peter Stockinger</h4>
+                                  <span style="margin: 15px;"></spanstyle>Bioinformatics & Data Science Expert <br> Co-Founder</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">Dr. Peter Stockinger</h4>
+                                    <p>Peter is currently establishing HomoLogiX as a spin-off from the Zurich University of Applied Sciences (ZHAW), where he works as a Bioinformatician & Data Scientist. With a focus on structural bioinformatics and computational protein design, Peter brings both scientific expertise and an entrepreneurial mindset to his work.
+        
+                                        Prior to his current role, Peter was involved at candidum GmbH, a computational enzyme design company where he started as a research assistant and eventually became CTO. During this time, he also completed his MSc and PhD while working full-time, balancing his studies with practical experience.
+                                        
+                                        In response to the Covid-19 pandemic, Peter co-founded two additional companies to address the need for accessible Point-of-Care Diagnostics, including antigen and PoC-NAT tests. Both companies were planned as short term projects and were successfully lead into a quick Return-on-Investment.</p>
+                                </span>
+                            </button>
+                  
+                            <button class="nav-link" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true" style="display: flex; align-items: top; padding: 0;min-width: 90vw;" onclick="toggleText(this)">
+                                <img src="Sumire.png" class="img-fluid" alt="" style="max-height: 20vh; width: auto; height: auto; margin: 15px;">
+                                <div class="original-content">
+                                  <h4 style="margin: 15px;">Dr. Sumire Honda</h4>
+                                  <span style="margin: 15px;"></spanstyle>Protein & Strain Engineering Expert <br> Co-Founder</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">Dr. Sumire Honda</h4>
+                                    <p>Sumire brings over 11 years of expertise in protein and strain engineering within the biotechnological and pharmaceutical sectors. Currently, she manages innovative enzyme engineering projects as a Project Lead at the Zurich University of Applied Sciences. Previously, she served as a Senior Scientist at Evolva, running different strain development projects from proof-of-concept to production. Her career began at Ajinomoto Co. Inc., where she oversaw scientific affairs and corporate communications. Sumire holds a PhD in Biocatalysis from the University of Stuttgart. 
+
+                                    </span>
+                            </button>
+                            <button class="nav-link" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true" style="display: flex; align-items: top; padding: 0;min-width: 90vw;" onclick="toggleText(this)">
+                                <img src="Daniela.png" class="img-fluid" alt="" style="max-height: 20vh; width: auto; height: auto; margin: 15px;">
+                                <div class="original-content">
+                                  <h4 style="margin: 15px;">Dr. Daniela Milbredt</h4>
+                                  <span style="margin: 15px;"></spanstyle>Molecular Biology & Bioanalytics Expert <br> Co-Founder</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">Dr. Daniela Milbredt</h4>
+                                    <p>Daniela holds a PhD in Biochemistry from the Technical University of Dresden. With more than 15 years of working experience in academic research, she is skilled in a wide range of molecular biology and biochemistry techniques. In 2020, she joined the Competence Center for Biocatalysis at Zurich University of Applied Sciences (ZHAW), where she is part of the Excelzyme Team focussing on enzyme engineering using high-throughput techniques in collaboration with the pharmaceutical industry. In this role, she is responsible for all laboratory-related activities, including molecular biology, biocatalysis, and analytics. In addition, she is experienced in the operation of the Tecan Fluent System for liquid handling. </span>
+                            </button>  
+                            <button class="nav-link" id="nav-business-tab" data-bs-toggle="tab" data-bs-target="#nav-business" type="button" role="tab" aria-controls="nav-business" aria-selected="true" style="display: flex; align-items: top; padding: 0;min-width: 90vw;" onclick="toggleText(this)">
+                                <img src="Rebecca.png" class="img-fluid" alt="" style="max-height: 20vh; width: auto; height: auto; margin: 15px;">
+                                <div class="original-content">
+                                  <h4 style="margin: 15px;">Prof. Dr. Rebecca Buller</h4>
+                                  <span style="margin: 15px;"></spanstyle>Scientific Advisor <br> Co-Founder</span>
+                                </div>
+                                <span class="toggle-text" style="display: none; margin: 15px;">
+                                    <h4 style="margin: 0;">Prof. Dr. Rebecca Buller</h4>
+                                    <p>Rebecca has been leading the Competence Center of Biocatalysis at Zurich University of Applied Sciences (ZHAW) since its establishment in 2016, utilizing the expertise of its members to conduct multidisciplinary research projects in the fields of chemistry and biology. Before joining the ZHAW, she served as Laboratory Head and Project Manager at Firmenich, a leading company in the flavors and fragrances industry. During her tenure, she developed and optimized several biocatalysis-based processes for producing active pharmaceutical ingredients. Rebecca earned her Ph.D. at the Department of Chemistry and Applied Biosciences at ETH Zurich.</span>  </button>                               
+                        </div>                         
+                    </div>
+
+        </main>
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                        
+                    <div class="col-lg-6 col-12">
+                        <div class="site-footer-wrap d-flex align-items-center">
+                            <p class="copyright-text mb-0 me-4">Copyright © 2024 HomoLogiX (not yet legally registered) <br> represented by Dr. Peter Stockinger</p>
+
+                            <ul class="social-icon">
+
+                                <li><a href="https://www.linkedin.com/company/homologix/" class="social-icon-link bi-linkedin"></a></li>
+                            
+                            </ul>
+                            
+                        </div>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </footer>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/jquery.sticky.js"></script>
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/magnific-popup-options.js"></script>
+        <script src="js/click-scroll.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
