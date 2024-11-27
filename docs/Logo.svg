@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg id="Ebene_2" data-name="Ebene 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 280.12 112">
   <defs>
-    <style>
-      .cls-1 {
-        font-size: 13px;
-        letter-spacing: .03em;
-      }
+    <style type="text/css">
+      <![CDATA[
+        @font-face {
+          font-family: 'TenorSans';
+          src: url('TenorSans-Regular.ttf') format('truetype');
+        }
 
-      .cls-2 {
-        fill: none;
-        stroke: #1c3661;
-        stroke-miterlimit: 10;
-      }
+        .cls-1 {
+          font-size: 13px;
+          letter-spacing: .03em;
+        }
 
-      .cls-3 {
-        font-size: 36px;
-      }
+        .cls-2 {
+          fill: none;
+          stroke: #1c3661;
+          stroke-miterlimit: 10;
+        }
 
-      .cls-4 {
-        fill: #1c3661;
-        font-family: TenorSans, 'Tenor Sans';
-      }
+        .cls-3 {
+          font-size: 36px;
+          font-family: 'TenorSans', 'Tenor Sans', sans-serif;
+        }
+
+        .cls-4 {
+          fill: #1c3661;
+          font-family: 'TenorSans', 'Tenor Sans', sans-serif;
+        }
+      ]]>
     </style>
   </defs>
   <g id="Ebene_1-2" data-name="Ebene 1">
